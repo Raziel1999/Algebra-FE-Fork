@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektori HTML Elementa</title>
+  <style>
+    body {
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+    }
+
+    [title]{
+      text-decoration: underline solid red;
+    }
+
+    [title="prvi odlomak"]{
+      font-weight: bold;
+    }
+
+    [title*="odlomak"]{
+      color: darkgreen;
+    }
+
+    [title~="odlomak"] {
+      text-transform: uppercase;
+    }
+
+    [title^="odlomak"] {
+      font-style: italic;
+    }
+
+    [title|="odlomak"] {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    [title$="odlomak"] {
+      color: darkorange;
+    }
+  </style>
+</head>
+<body>
+  <h1 title="Glavni naslov stranice">Quis irure exercitation dolore esse officia cupidatat elit deserunt exercitation cupidatat in.</h1>
+  <h2>Reprehenderit do sunt aliqua est nostrud adipisicing sunt esse consequat sint.</h2>
+  <h3>Ex ea eu et reprehenderit id in quis consequat officia in eu enim sunt aute.</h3>
+  <p title="prvi odlomak">Magna deserunt velit minim ut ad magna enim. Non nostrud eu id consequat. Ad do exercitation aliqua duis culpa voluptate voluptate cillum ex culpa nisi.</p>
+  <p title="odlomak-2">Magna deserunt velit minim ut ad magna enim. Non nostrud eu id consequat. Ad do exercitation aliqua duis culpa voluptate voluptate cillum ex culpa nisi.</p>
+  <p title="odlomak 3">Magna deserunt velit minim ut ad magna enim. <strong>Non nostrud eu id consequat. Ad do exercitation aliqua duis</strong> culpa voluptate voluptate cillum ex culpa nisi.</p>
+  <p title="odlomakbla">Magna deserunt velit minim ut ad magna enim. Non nostrud eu id. <strong>Ad do exercitation aliqua duis culpa voluptate voluptate</strong> cillum ex culpa nisi.</p>
+  <p>Magna deserunt velit minim ut ad magna enim. <span title="nesto">Non nostrud eu id consequat.</span> Ad do exercitation aliqua duis culpa voluptate voluptate cillum ex culpa nisi.</p>
+</body>
+</html>
