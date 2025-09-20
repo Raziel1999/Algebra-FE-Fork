@@ -4,6 +4,7 @@ var datum = new Date();
 
 console.log(datum.toString());
 console.log(datum.toLocaleString());
+1;
 
 // 2.
 
@@ -33,12 +34,10 @@ console.log(JSON.stringify(Osoba));
 
 console.log("Sirina ekrana je: " + window.screen.width);
 
-
-// OBJEKT GLOBALNE RAZINE!!!!
 const element = document.getElementById("myDiv");
 console.log(element);
 
 const tekst = "Ovo je primjer teksta";
 //const re = /primjer/;
 const re = new RegExp("primjer");
-console.log(tekst.replace(re, "nastavak"))
+console.log(tekst.replace(re, "nastavak"));
