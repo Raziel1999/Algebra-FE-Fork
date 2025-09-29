@@ -1,10 +1,9 @@
-//import uniqueString from "unique-string";
-
+import { v4 as uuidv4 } from "uuid";
 import './App.css';
 
 function App() {
 
-const myId = "x665ffr345";
+const myId = (uuidv4);
 
   return (
     <div className="App">
