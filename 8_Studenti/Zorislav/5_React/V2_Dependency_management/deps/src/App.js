@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { v4 as uuidv4 } from "uuid";
+import randomstring from "randomstring";
+
 import './App.css';
 
 function App() {
+
+  const myId = uuidv4();
+  const myId2 = randomstring.generate(8);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Moj random generirani ID: {myId}</p>
+      <p>Moj drugi random generirani ID: {myId2}</p>
     </div>
   );
 }
